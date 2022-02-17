@@ -35,6 +35,7 @@ export class AppComponent {
   ];
   data1 = "x";
   name1: any;
+  today = Date();
   getValue() {
     return "This is get value function"
   }
@@ -85,5 +86,8 @@ export class AppComponent {
   }
   getVal(item: HTMLInputElement) {
     console.warn(item)
+  }
+  capString(item: string) {
+    return item.toUpperCase();
   }
 }

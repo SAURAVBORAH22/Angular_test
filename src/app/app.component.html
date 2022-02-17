@@ -252,3 +252,13 @@ when the user presses and releases the key then this event is triggered -->
 <!-- template reference variable -->
 <input type="text" #box2 name="user" placeholder="Enter the username">
 <button (click)="getVal(box2)">Call Function</button>
+<!-- Pipes in Angular -->
+<!-- Pipes are used to convert the format of our data to other form
+Pipes will only we used in the html page -->
+<br>
+<br>
+<h1>{{title | uppercase}}</h1>
+<h1>{{title | lowercase}}</h1>
+<h1>{{title}}</h1>
+<h2>{{today | date: 'fullDate'}}</h2>
+<h1>{{capString(title)}}</h1>

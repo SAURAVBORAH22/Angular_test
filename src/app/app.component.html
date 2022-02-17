@@ -238,3 +238,14 @@ when the user presses and releases the key then this event is triggered -->
 <ul *ngFor="let user of userDetails1">
   <app-user-details [item2]='user'></app-user-details>
 </ul>
+<br>
+<br>
+<!-- passing data from child to parent (very important) -->
+<!-- $event here is the data that is being sent -->
+<h1>{{data1}}</h1>
+<app-child1 (updateDataEvent)="updateData($event)"></app-child1>
+<br>
+<br>
+<!-- two way binding -->
+<input type="text" [(ngModel)]="name1">
+<h3>{{name1}}</h3>

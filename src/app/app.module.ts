@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
+import { Child1Component } from './child1/child1.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { UserDetailsComponent } from './user-details/user-details.component';
     LoginComponent,
     HeaderComponent,
     ChildComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    Child1Component
   ],
   imports: [
     BrowserModule,

@@ -33,6 +33,8 @@ export class AppComponent {
     { name: 'user 3', email: 'user3@test.com' },
     { name: 'user 4', email: 'user4@test.com' },
   ];
+  data1 = "x";
+  name1: any;
   getValue() {
     return "This is get value function"
   }
@@ -75,5 +77,10 @@ export class AppComponent {
   }
   updateChild() {
     this.data = Math.floor(Math.random() * 10)
+  }
+  //will be passing this function to child1 component
+  updateData(item: string) {
+    console.warn(item);
+    this.data1 = item;
   }
 }

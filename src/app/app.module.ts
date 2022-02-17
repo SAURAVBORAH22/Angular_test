@@ -15,6 +15,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { Child1Component } from './child1/child1.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { Child1Component } from './child1/child1.component';
     HeaderComponent,
     ChildComponent,
     UserDetailsComponent,
-    Child1Component
+    Child1Component,
+    UsdInrPipe
   ],
   imports: [
     BrowserModule,

@@ -262,3 +262,42 @@ Pipes will only we used in the html page -->
 <h1>{{title}}</h1>
 <h2>{{today | date: 'fullDate'}}</h2>
 <h1>{{capString(title)}}</h1>
+<br>
+<br>
+<!-- Advance pipes -->
+<!-- Params with pipes -->
+<h1>{{title | uppercase}}</h1>
+<br>
+<!-- using two pipes in the same tag -->
+<h1>{{title | slice : 1:4 | uppercase}}</h1>
+<br>
+<!-- taking data in the form of json object -->
+<h2>{{user1 | json | uppercase}}</h2>
+<br>
+<!-- decimal ke pehle 2 value aur decimal ke baad 2 value -->
+<h2>{{2000.3000 | number: '2.2-3'}}</h2>
+<br>
+<!-- currency pipes -->
+<h2>{{20 | currency:'INR'}}</h2>
+<br>
+<br>
+<!-- Making custom pipes -->
+<h2>{{20 | usdInr : 75.11 | currency:'INR'}}</h2>
+<br>
+<hr>
+<!-- template driven form -->
+<!-- jin form ki handling html vali side pe hoti h unhe template driven form bolte h -->
+<!-- import ngForm in the ts file  -->
+<!-- ngSumit is an event handler here -->
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+  <input type="text" placeholder="Enter Name" name="name" ngModel>
+  <br>
+  <br>
+  <input type="password" placeholder="Enter Password" name="password" ngModel>
+  <br>
+  <br>
+  <button>Login</button>
+</form>
+<br>
+<br>
+<hr>

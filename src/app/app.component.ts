@@ -36,6 +36,10 @@ export class AppComponent {
   data1 = "x";
   name1: any;
   today = Date();
+  user1 = {
+    name: 'saurav',
+    age: '28'
+  }
   getValue() {
     return "This is get value function"
   }
@@ -89,5 +93,8 @@ export class AppComponent {
   }
   capString(item: string) {
     return item.toUpperCase();
+  }
+  userLogin(item: any) {
+    console.warn(item)
   }
 }

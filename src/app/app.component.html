@@ -16,7 +16,7 @@
 <br>
 <!-- #box is the id
 when the user presses and releases the key then this event is triggered -->
-<input type="text" #box (keyup)="getData(box.value)" placeholder="event keyup">
+<input type="text" #box (keyup)="getData(box .value)" placeholder="event keyup">
 <br>
 <br>
 <!-- tells AngularJS what to do when the keyboard is used on the specific HTML element. -->
@@ -249,3 +249,6 @@ when the user presses and releases the key then this event is triggered -->
 <!-- two way binding -->
 <input type="text" [(ngModel)]="name1">
 <h3>{{name1}}</h3>
+<!-- template reference variable -->
+<input type="text" #box2 name="user" placeholder="Enter the username">
+<button (click)="getVal(box2)">Call Function</button>

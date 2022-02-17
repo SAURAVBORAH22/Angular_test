@@ -83,4 +83,7 @@ export class AppComponent {
     console.warn(item);
     this.data1 = item;
   }
+  getVal(item: HTMLInputElement) {
+    console.warn(item)
+  }
 }

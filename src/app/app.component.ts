@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { NgForm, FormControl, FormControlName, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -40,6 +40,15 @@ export class AppComponent {
     name: 'saurav',
     age: '28'
   }
+  // //form group will control our form 
+  // //form control will control the specific field 
+  // loginForm = new FormGroup({
+  //   user: new FormControl(''),
+  //   password: new FormControl('')
+  // })
+  // loginUser() {
+  //   console.warn(this.loginForm.value)
+  // }
   getValue() {
     return "This is get value function"
   }

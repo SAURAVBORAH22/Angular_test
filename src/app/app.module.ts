@@ -16,6 +16,8 @@ import { ChildComponent } from './child/child.component';
 import { UserDetailsComponent } from './user-details/user-details.component';
 import { Child1Component } from './child1/child1.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RedElDirective } from './red-el.directive'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     ChildComponent,
     UserDetailsComponent,
     Child1Component,
-    UsdInrPipe
+    UsdInrPipe,
+    RedElDirective
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     BrowserAnimationsModule,
     MatSliderModule,
     MatButtonModule,
-    MatBadgeModule
+    MatBadgeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
